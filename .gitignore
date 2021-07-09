@@ -1,5 +1,2 @@
 # Project exclude paths
 /venv/
-ToDoList.txt
-test.py
-knowledge/words.json
