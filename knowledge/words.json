@@ -1,0 +1,26 @@
+{"words": [
+        {"tag": "Bonjour",
+         "demande": ["bonjour", "salut", "hello", "hi", "hey"],
+         "response": ["Salut", "Bonjour"],
+         "context": [""]
+          },
+
+        {"tag": "Commandes",
+         "demande": ["mdpgen", "8ball", "search", "pfc", "test", "exit", "sortie", "concombre", "help", "aide"],
+         "response": [""],
+         "context": [""]
+          },
+
+        {"tag": "Amabilite",
+         "demande": ["ça va ?", "comment ça va ?", "tu vas bien ?"],
+         "response": ["Bien et toi ?"],
+         "context": [""]
+          },
+
+        {"tag": "JeNeSuisPasUnRobot",
+         "demande": ["tu es un robot ?", "robot ?", "tu es une ia ?"],
+         "response": ["Je ne suis pas un robot !", "Je ne pense pas et toi ?"],
+         "context": [""]
+          }
+   ]
+}

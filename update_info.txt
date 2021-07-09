@@ -1,0 +1,25 @@
+Format de version FKIA_v_x.x.x.x
+
+Projet débuté le 03/07/2021
+
+> 06/07/2021 - FKIA_v_0.0.1.0 - Mise en place des versions :
+    + Ajout variable "version"
+    + Ajout du fichier "update_info"
+    + Ajout de l'apprentissage des utilisateur par le robot ( fichier users dans knowledge )
+    + Ajout d'un try except pour résoudre le plantage quand l'utilisateur écrit trop de mots inconnu
+    + Ajout des fichier déjà écrit par moi : pfc.py (pierre feuille ciseaux), search.py, mdpgen.py, eightball.py
+    + Mise en place fonctionnel de pfc, search, mdpgen, 8ball [WIP pour les amiliorer]
+    + Ajout d'une To Do List
+
+> 07/07/2021 - FKIA_v_0.0.1.1 - Mise en place du fichier user en csv :
+    + Mise en place du fichier users.csv et integration au code avec demande age prenom nom de l'utilisateur
+    + Ajout commande help et affichage
+    [WIP] ajout fichier words.json et commencé a travailler sur l'integration
+
+> 08/07/2021 - FKIA_v_0.0.1.3 - Amilioration de > mdpgen et pfc et different ajour :
+    + Modification de mdpgen, ajout de l'option "perso" qui permet de choisir le nombre et type de carractére que l'on veut
+        > Ajout aussi d'un descriptif au lancement pour les different parametre possible
+    + Ajout des aliase et modification de la commande help, rétroactive via le fichier info_help.csv
+    + Ajout dans le PFC d'une probalilité aléatoire pour de 1 à 100 pour chaque option + choix aléatoir d'une des trois
+        avec plus de chance si le poid et plus important ( random.choices(population, weights=None, *, cum_weights=None, k=1)
+

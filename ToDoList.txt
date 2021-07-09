@@ -1,0 +1,25 @@
+Choses a faire :
+
+    ALL_TIME > Trouver de nouvelle idée et amilioration et mettre au propre le projet
+
+    + Ajout possibilité de modifier les information de l'utilisateur
+
+    + Rajoutée des connaissance de phrase et de réponse possible
+
+    + Voir pour modifier le words.py en JSON
+
+    + Retravailler pfc
+       FAIT > pour qu'il soit plus "intelligent" avec calcule de proba
+        > optimisé ( voir note en bas du code )
+
+
+Choses fait :
+
+    [FAIT] Retravailler me mdpgen pour qu'il soit plus complet
+        > choix d'une nombre de lettre, chiffre, car spe ( possible pas obligatoire)
+
+    [FAIT]  Retravailler le systême d'enregistrement d'utilisateur en mode CSV avec récuperation de plus d'information ( optenionel )
+
+    [FAIT] Ajout une option pour affichée les commandes possible et leur utilitée voir ajouter d'un systéme d'alias
+        [FAIT] Retravailler la commande help
+        [FAIT] Voir pour les aliase
