@@ -10,7 +10,7 @@ from knowledge import words, help
 from colorama import Fore
 from colorama import Style
 
-version = "FKIA_v_0.0.1.3"  # Versions de Frankk IA
+version = "FKIA_v_0.0.1.4"  # Versions de Frankk IA
 
 # entrée dans le programme
 print(Fore.YELLOW + "Bienvenue dans Frankk IA votre nouvelle ami !\n" + Style.RESET_ALL)
@@ -25,6 +25,7 @@ JeNeSuisPasUnRobot = words.JeNeSuisPasUnRobot
 exit_programme = False
 enter_user = user + " > "
 rep_bot = "IA > "
+
 
 # début de la boucle globale de l'IA
 while not exit_programme:
@@ -62,40 +63,46 @@ while not exit_programme:
 
     while not exit_programme:
         try:
-            enter = input(enter_user)
-            enter_low = enter.lower()
-            if enter_low == Commandes.commandes[5] or enter_low == Commandes.commandes[6]:  # Sortie du programe [sortie] [exit]
+            enter = input(enter_user).lower()
+            if enter == Commandes.commandes[5] or enter == Commandes.commandes[6]:  # Sortie du programe [sortie] [exit]
                 exit_programme = True
                 break
 
             for i in range(len(enter.lower().split(" "))):
                 random_rep_bonjour = random.randint(0, len(Bonjour.reponse) - 1)
-                if enter_low == Bonjour.demande[i]:  # Salutation
+                if enter == Bonjour.demande[i]:  # Salutation
                     print(rep_bot + Bonjour.reponse[random_rep_bonjour])
                     break
-                if enter_low == Amabilite.demande[i]:  # répond à "ça va ?"
+                if enter == Amabilite.demande[0] or enter == Amabilite.demande[1] or enter == Amabilite.demande[2]:  # répond à "ça va ?"
                     print(rep_bot + Amabilite.reponse[0])
-                    break
-                if enter_low == JeNeSuisPasUnRobot.demande[i]:  # car ce n'est pas un robot !
+                    enter = input(enter_user)
+                    enter = enter.lower()
+                    if enter == Amabilite.demande[3] or enter == Amabilite.demande[4]:
+                        print(rep_bot + Amabilite.reponse[1])
+                        break
+                    if enter == Amabilite.demande[5] or enter == Amabilite.demande[6]:
+                        print(rep_bot + Amabilite.reponse[2])
+                        break
+                if enter == JeNeSuisPasUnRobot.demande[i]:  # car ce n'est pas un robot !
                     random_rep_JNSPUR = random.randint(0, len(JeNeSuisPasUnRobot.reponse) - 1)
                     print(rep_bot + JeNeSuisPasUnRobot.reponse[random_rep_JNSPUR])
                     break
 
-                if enter_low == Commandes.commandes[0] or enter_low == Commandes.alias[0]:  # Générateur de mots de passes [mdpgen]
+                if enter == Commandes.commandes[0] or enter == Commandes.alias[0]:  # Générateur de mots de passes [mdpgen]
                     print(rep_bot + "Je vous lance le programme générateur de mots de passe")
                     mdpgen.generator()
                     break
-                if enter_low == Commandes.commandes[1] or enter_low == Commandes.alias[1]:  # pour jouer au 8ball [8ball]
+                if enter == Commandes.commandes[1] or enter == Commandes.alias[1]:  # pour jouer au 8ball [8ball]
                     eightball.oracle()
                     break
-                if enter_low == Commandes.commandes[2] or enter_low == Commandes.alias[3]:  # pour faire des recherches
+                if enter == Commandes.commandes[2] or enter == Commandes.alias[3]:  # pour faire des recherches
                     search.search()
                     break
-                if enter_low == Commandes.commandes[3] or enter_low ==  Commandes.alias[2]:  # Commande pierre papier ciseaux [pfc]
+                if enter == Commandes.commandes[3] or enter ==  Commandes.alias[2]:  # Commande pierre papier ciseaux [pfc]
                     print(rep_bot + "Lancement du pierre feuille ciseaux")
                     pfc.ppc()
                     break
-                if enter_low == Commandes.commandes[8] or enter_low == Commandes.commandes[9]:  # Commande Help [help] ou [aide]
+                if enter == Commandes.commandes[8] or enter == Commandes.commandes[9]:  # Commande Help [help] ou [aide]
                     help.help_me()
                     break
 

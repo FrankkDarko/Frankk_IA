@@ -10,7 +10,7 @@ class Commandes:
 
 class Amabilite:
     demande = ["ça va ?", "comment ça va ?", "tu vas bien ?", "oui", "super", "non", "bof"]
-    reponse = ["Bien et toi ?", "Je suis heureux que ça aille bien", "oh.... tu peut jouer si tu veut ( fait : help"]
+    reponse = ["Bien et toi ?", "Je suis heureux que ça aille bien", "oh.... tu peut jouer si tu veut (fait : help)"]
 
 
 class JeNeSuisPasUnRobot:

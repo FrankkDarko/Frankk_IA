@@ -12,6 +12,8 @@ Choses a faire :
        FAIT > pour qu'il soit plus "intelligent" avec calcule de proba
         > optimisé ( voir note en bas du code )
 
+    + mdpgen : option phrase modifier
+
 
 Choses fait :
 

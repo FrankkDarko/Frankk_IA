@@ -17,7 +17,7 @@ def generator():
           ">>>> Faible  : 6 carractére aléatoire\n"
           ">>>> Moyen   : 8 carractére aléatoire\n"
           ">>>> Fort    : 16 carractére aléatoire\n"
-          ">>>> Military: 16 carractére aléatoire\n"
+          ">>>> Military: 32 carractére aléatoire\n"
           ">>>> Perso   : vous définisser chaque paramètre\n"
           "")
 
