@@ -28,5 +28,7 @@ Projet débuté le 03/07/2021
 
 > 10/07/2021 - FKIA_v_0.0.1.4 - Modification mineur de Frankk IA :
     + Ajout de nouvelle réponse dans le cas d'une amabalité
-    ~ modification de la variable "enter" et suppressions de la variable "enter_lower"
+    ~ Modification de la variable "enter" et suppressions de la variable "enter_lower"
     + Mise à jour du README.md
+    + Ajout commande info
+    + Déplacement de la variable version vers infokia.py

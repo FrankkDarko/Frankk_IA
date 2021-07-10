@@ -4,7 +4,7 @@ class Bonjour:
 
 
 class Commandes:
-    commandes = ["mdpgen", "8ball", "search", "pfc", "test", "exit", "sortie", "concombre", "help", "aide"]
+    commandes = ["mdpgen", "8ball", "search", "pfc", "test", "exit", "sortie", "concombre", "help", "aide", "info"]
     alias = ["gen", "oracle", "ppc", "recherche"]
 
 

@@ -21,7 +21,7 @@ quelque petite commandes amusante et pratique
 
 * **Commandes**
    
-*mdpgen, 8ball, search, pfc, test, exit, sortie, concombre, help, aide, gen, oracle, ppc, recherche*
+*mdpgen, 8ball, search, pfc, test, exit, sortie, concombre, help, aide, gen, oracle, ppc, recherche, info*
 
 
 

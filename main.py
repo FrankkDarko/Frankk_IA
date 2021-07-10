@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
 # coding:utf-8
 
-""" Import des librairies"""
+""" Import des librairies """
 import random
 import pandas as pd
 import csv
 from utils import pfc, eightball, mdpgen, search
-from knowledge import words, help
+from knowledge import words, help, infofkia
 from colorama import Fore
 from colorama import Style
 
-version = "FKIA_v_0.0.1.4"  # Versions de Frankk IA
 
 # entrée dans le programme
 print(Fore.YELLOW + "Bienvenue dans Frankk IA votre nouvelle ami !\n" + Style.RESET_ALL)
@@ -67,6 +66,8 @@ while not exit_programme:
             if enter == Commandes.commandes[5] or enter == Commandes.commandes[6]:  # Sortie du programe [sortie] [exit]
                 exit_programme = True
                 break
+            if enter == Commandes.commandes[10]:
+                infofkia.info_of_fkia()
 
             for i in range(len(enter.lower().split(" "))):
                 random_rep_bonjour = random.randint(0, len(Bonjour.reponse) - 1)
@@ -98,7 +99,7 @@ while not exit_programme:
                 if enter == Commandes.commandes[2] or enter == Commandes.alias[3]:  # pour faire des recherches
                     search.search()
                     break
-                if enter == Commandes.commandes[3] or enter ==  Commandes.alias[2]:  # Commande pierre papier ciseaux [pfc]
+                if enter == Commandes.commandes[3] or enter == Commandes.alias[2]:  # Commande pierre papier ciseaux [pfc]
                     print(rep_bot + "Lancement du pierre feuille ciseaux")
                     pfc.ppc()
                     break
