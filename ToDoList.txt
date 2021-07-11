@@ -12,7 +12,6 @@ Choses a faire :
        FAIT > pour qu'il soit plus "intelligent" avec calcule de proba
         > optimisé ( voir note en bas du code )
 
-    + mdpgen : option phrase modifier
 
 
 Choses fait :
@@ -25,3 +24,5 @@ Choses fait :
     [FAIT] Ajout une option pour affichée les commandes possible et leur utilitée voir ajouter d'un systéme d'alias
         [FAIT] Retravailler la commande help
         [FAIT] Voir pour les aliase
+
+    [FAIT] mdpgen : option phrase modifier

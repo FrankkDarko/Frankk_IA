@@ -21,14 +21,38 @@ quelque petite commandes amusante et pratique
 
 * **Commandes**
    
-*mdpgen, 8ball, search, pfc, test, exit, sortie, concombre, help, aide, gen, oracle, ppc, recherche, info*
+*mdpgen, 8ball, search, pfc, exit, sortie, help, aide, gen, oracle, ppc, recherche, info*
 
 
 
+* **Détail des options**  
 
+commande : `help` `aide`
 
+> Lance la commande d'aide
 
+commande : `mdpgen` `gen`
 
+> Génere des mots de passe, il y a different options possible :
+>> [1] Faible : 6 carractére aléatoire  
+>> [2] Moyen : 8 carractére aléatoire  
+>> [3] Fort : 16 carractére aléatoire  
+>> [4] Military : 32 carractére aléatoire  
+>> [5] Perso : vous définisser chaque paramètre  
+>> [6] Phrase : modifie une phrase de votre choix
 
+commande : `8ball` `oracle`
 
+> Répond aléatoirement à la phrase donnée, serait-ce la réponse du destin ?
 
+commande : `search` `recherche`
+
+> Lance une multiple recherche sur different moteur de recherche
+
+commande : `pfc` `ppc`
+
+> Lance un pierre feuille ciseaux
+
+commande : `info`
+
+> Affiche les informations du programme

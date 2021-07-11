@@ -32,3 +32,8 @@ Projet débuté le 03/07/2021
     + Mise à jour du README.md
     + Ajout commande info
     + Déplacement de la variable version vers infokia.py
+
+> 11/07/2021 - FKIA_v_0.0.1.5 -  :
+    + Ajout de nouvelle option à mdpgen : modification d'une phrase choisis
+    ~  Mise à jours du readme
+    ~ Modification de infofkia
