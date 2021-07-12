@@ -24,7 +24,7 @@ def generator():
 
     choix = input("IA > Merci de faire votre choix : ").lower()
 
-    if choix == "faible" or "1":
+    if choix == "faible":
         print("----------- Les résultats -----------")
         for c in range(6):
             temp = random.sample(all, 6)
@@ -33,7 +33,7 @@ def generator():
                   + Style.BRIGHT + choix + " : " + Style.RESET_ALL + Fore.GREEN + Style.BRIGHT
                   + password + Style.RESET_ALL)
 
-    if choix == "moyen" or "2":
+    elif choix == "moyen":
         print("----------- Les résultats -----------")
         for c in range(6):
             temp = random.sample(all, 8)
@@ -42,7 +42,7 @@ def generator():
                   + Style.BRIGHT + choix + " : " + Style.RESET_ALL + Fore.GREEN + Style.BRIGHT
                   + password + Style.RESET_ALL)
 
-    if choix == "fort" or "3":
+    elif choix == "fort":
         print("----------- Les résultats -----------")
         for c in range(6):
             temp = random.sample(all, 16)
@@ -51,7 +51,7 @@ def generator():
                   + Style.BRIGHT + choix + " : " + Style.RESET_ALL + Fore.GREEN + Style.BRIGHT
                   + password + Style.RESET_ALL)
 
-    if choix == "military" or "4":
+    elif choix == "military":
         print("----------- Les résultats -----------")
         for c in range(6):
             temp = random.sample(all, 32)
@@ -60,7 +60,7 @@ def generator():
                   + Style.BRIGHT + choix + " : " + Style.RESET_ALL + Fore.GREEN + Style.BRIGHT
                   + password + Style.RESET_ALL)
 
-    if choix == "perso" or "5":
+    elif choix == "perso":
 
         try:
             lettre_MAJ = input("Le nombre de lettre majuscule : ")
@@ -85,7 +85,7 @@ def generator():
         except ValueError:
             print("Les valeurs entrée sont incorrecte !")
 
-    if choix == "phrase" or "6":
+    elif choix == "phrase":
         phrase = input("donner moi une phrase : ")
 
         changement = input("Donner le nombre de changement voulut : ")
@@ -112,6 +112,3 @@ def generator():
                 + Style.BRIGHT + choix + " : " + Style.RESET_ALL + Fore.GREEN + Style.BRIGHT
                 + phrase_fin + Style.RESET_ALL)
 
-
-
-generator()

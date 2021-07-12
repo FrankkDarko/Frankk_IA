@@ -12,4 +12,6 @@ def info_of_fkia():
           "\n"
           "► Github : https://github.com/FrankkDarko\n"
           "\n"
+          "► Site : en cours de développement\n"
+          "\n"
           "► Contact : frankkdarko@protonmail.com\n")

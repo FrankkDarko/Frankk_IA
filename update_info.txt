@@ -37,3 +37,9 @@ Projet débuté le 03/07/2021
     + Ajout de nouvelle option à mdpgen : modification d'une phrase choisis
     ~  Mise à jours du readme
     ~ Modification de infofkia
+
+> 12/07/2021 - FKIA_v_0.0.1.5 - correctif :
+    ~ modification du readme
+    ~ correctif de mdpgen
+        > suppression de la possibilité de taper le chiffre du mode car cela fait bugger le programme
+    ~ modification de infofkia
