@@ -14,5 +14,6 @@ def help_me():
         desc_value = lire["description"].values
 
         for i in range(len(lire)):
-            print("Commande : " + nom_value[i] +
-                  "\n             └► " + "Alias : [" + alias_value[i] + "]" + "  ||  Description : " + desc_value[i])
+            print(Style.RESET_ALL + Fore.GREEN + "Commande : " + Fore.RED + nom_value[i] + Fore.GREEN +
+                  "\n             └► " + "Alias : " + Fore.RED + "[" + alias_value[i] + "]"
+                  + Fore.GREEN + "  ||  Description : " + Fore.YELLOW + desc_value[i] + Style.RESET_ALL)

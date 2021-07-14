@@ -12,20 +12,23 @@ def generator():
 
     all = MIN + MAJ + NUM + CAR
 
-    print("Génerateur de mots de passe\n"
+    print(Style.RESET_ALL + Fore.GREEN +
+          "Génerateur de mots de passe\n"
           "Choix :\n"
-          ">>>>[1] Faible   : 6 carractére aléatoire\n"
-          ">>>>[2] Moyen    : 8 carractére aléatoire\n"
-          ">>>>[3] Fort     : 16 carractére aléatoire\n"
-          ">>>>[4] Military : 32 carractére aléatoire\n"
-          ">>>>[5] Perso    : vous définisser chaque paramètre\n"
-          ">>>>[6] Phrase   : modifie une phrase de votre choix\n"
-          "")
+          + Fore.YELLOW +
+          Fore.RED + "─► [1] Faible   : " + Fore.YELLOW + "6 carractére aléatoire\n" +
+          Fore.RED + "─► [2] Moyen    : " + Fore.YELLOW + "8 carractére aléatoire\n" +
+          Fore.RED + "─► [3] Fort     : " + Fore.YELLOW + "16 carractére aléatoire\n" +
+          Fore.RED + "─► [4] Military : " + Fore.YELLOW + "32 carractére aléatoire\n" +
+          Fore.RED + "─► [5] Perso    : " + Fore.YELLOW + "vous définisser chaque paramètre\n" +
+          Fore.RED + "─► [6] Phrase   : " + Fore.YELLOW + "modifie une phrase de votre choix\n" +
+          "" + Style.RESET_ALL)
 
-    choix = input("IA > Merci de faire votre choix : ").lower()
+    choix = input(Fore.RED + Style.BRIGHT + "IA >" + Fore.LIGHTYELLOW_EX + " Merci de faire votre choix : "
+                  + Fore.LIGHTCYAN_EX).lower()
 
     if choix == "faible":
-        print("----------- Les résultats -----------")
+        print(Fore.RED + Style.BRIGHT + "----------- Les résultats -----------" + Style.RESET_ALL)
         for c in range(6):
             temp = random.sample(all, 6)
             password = "".join(temp)

@@ -23,11 +23,11 @@ quelque petite commandes amusante et pratique
 
 * **Commandes**
    
-*mdpgen, 8ball, search, pfc, exit, sortie, help, aide, gen, oracle, ppc, recherche, info*
+*mdpgen, 8ball, search, pfc, exit, sortie, help, aide, gen, oracle, ppc, recherche, info, cryptor, crypteur*
 
 
 
-* **Détail des options**  
+## 3. Détail des options  
 
 commande : `help` `aide`
 
@@ -58,6 +58,13 @@ commande : `pfc` `ppc`
 commande : `info`
 
 > Affiche les informations du programme
+
+commande : `cryptor` `crypteur`
+
+> Programme de cryptage et décryptage avec actuellement :
+> > * ROT13  
+> > * césar
+> > * vigenère
 
 commande : `exit` `sortie`
 

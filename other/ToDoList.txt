@@ -1,6 +1,6 @@
 Choses a faire :
 
-    ALL_TIME > Trouver de nouvelle idée et amilioration et mettre au propre le projet
+    ALL_TIME > Trouver de nouvelle idée et amelioration et mettre au propre le projet
 
     + Ajout possibilité de modifier les information de l'utilisateur
 
@@ -12,7 +12,7 @@ Choses a faire :
        FAIT > pour qu'il soit plus "intelligent" avec calcule de proba
         > optimisé ( voir note en bas du code )
 
-
+    [EN COURS] Faire un crypter / décrypter avec plusieurs option (md5, ROT13, etc )
 
 Choses fait :
 
@@ -26,3 +26,5 @@ Choses fait :
         [FAIT] Voir pour les aliase
 
     [FAIT] mdpgen : option phrase modifier
+
+    [FAIT] Rendre plus esthétique les print

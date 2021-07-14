@@ -5,16 +5,15 @@
 import random
 import pandas as pd
 import csv
-from utils import pfc, eightball, mdpgen, search
+from utils import pfc, eightball, mdpgen, search, cryptor
 from knowledge import words, help, infofkia
 from colorama import Fore
 from colorama import Style
 
-
 # entrée dans le programme
 print(Fore.YELLOW + "Bienvenue dans Frankk IA votre nouvelle ami !\n" + Style.RESET_ALL)
-print("IA > Qui es tu ? ")
-user = input("Utilisateur > ")  # prise du nom de l'utilisateur
+print(Fore.RED + Style.BRIGHT + "IA > " + Fore.LIGHTYELLOW_EX + "Qui es tu ? ")
+user = input(Fore.GREEN + "Utilisateur > " + Fore.LIGHTCYAN_EX)  # prise du nom de l'utilisateur
 
 # Variable
 Bonjour = words.Bonjour
@@ -22,9 +21,8 @@ Commandes = words.Commandes
 Amabilite = words.Amabilite
 JeNeSuisPasUnRobot = words.JeNeSuisPasUnRobot
 exit_programme = False
-enter_user = user + " > "
-rep_bot = "IA > "
-
+enter_user = Fore.GREEN + Style.BRIGHT + user + " > " + Fore.LIGHTCYAN_EX
+rep_bot = Fore.RED + Style.BRIGHT + "IA > " + Fore.LIGHTYELLOW_EX
 
 # début de la boucle globale de l'IA
 while not exit_programme:
@@ -64,17 +62,24 @@ while not exit_programme:
         try:
             enter = input(enter_user).lower()
             if enter == Commandes.commandes[5] or enter == Commandes.commandes[6]:  # Sortie du programe [sortie] [exit]
+                print(rep_bot + "Bye et à bientôt !")
                 exit_programme = True
                 break
-            if enter == Commandes.commandes[10]:
-                infofkia.info_of_fkia()
 
-            for i in range(len(enter.lower().split(" "))):
+            for i in range(len(enter)):
                 random_rep_bonjour = random.randint(0, len(Bonjour.reponse) - 1)
-                if enter == Bonjour.demande[i]:  # Salutation
+
+                if enter == Commandes.commandes[10]:  # Affiche la commande [info]
+                    infofkia.info_of_fkia()
+                    break
+
+                if enter == Bonjour.demande[0] or enter == Bonjour.demande[1] or enter == Bonjour.demande[2] \
+                        or enter == Bonjour.demande[3] or enter == Bonjour.demande[4]:  # Salutation
                     print(rep_bot + Bonjour.reponse[random_rep_bonjour])
                     break
-                if enter == Amabilite.demande[0] or enter == Amabilite.demande[1] or enter == Amabilite.demande[2]:  # répond à "ça va ?"
+
+                if enter == Amabilite.demande[0] or enter == Amabilite.demande[1] \
+                        or enter == Amabilite.demande[2]:  # répond à "ça va ?"
                     print(rep_bot + Amabilite.reponse[0])
                     enter = input(enter_user)
                     enter = enter.lower()
@@ -84,12 +89,14 @@ while not exit_programme:
                     if enter == Amabilite.demande[5] or enter == Amabilite.demande[6]:
                         print(rep_bot + Amabilite.reponse[2])
                         break
+
                 if enter == JeNeSuisPasUnRobot.demande[i]:  # car ce n'est pas un robot !
                     random_rep_JNSPUR = random.randint(0, len(JeNeSuisPasUnRobot.reponse) - 1)
                     print(rep_bot + JeNeSuisPasUnRobot.reponse[random_rep_JNSPUR])
                     break
 
-                if enter == Commandes.commandes[0] or enter == Commandes.alias[0]:  # Générateur de mots de passes [mdpgen]
+                if enter == Commandes.commandes[0] or enter == Commandes.alias[
+                    0]:  # Générateur de mots de passes [mdpgen]
                     print(rep_bot + "Je vous lance le programme générateur de mots de passe")
                     mdpgen.generator()
                     break
@@ -99,12 +106,17 @@ while not exit_programme:
                 if enter == Commandes.commandes[2] or enter == Commandes.alias[3]:  # pour faire des recherches
                     search.search()
                     break
-                if enter == Commandes.commandes[3] or enter == Commandes.alias[2]:  # Commande pierre papier ciseaux [pfc]
+                if enter == Commandes.commandes[3] or enter == Commandes.alias[
+                    2]:  # Commande pierre papier ciseaux [pfc]
                     print(rep_bot + "Lancement du pierre feuille ciseaux")
                     pfc.ppc()
                     break
                 if enter == Commandes.commandes[8] or enter == Commandes.commandes[9]:  # Commande Help [help] ou [aide]
                     help.help_me()
+                    break
+
+                if enter == Commandes.commandes[11] or enter == Commandes.commandes[12]:  # Affiche la commande [info]
+                    cryptor.cryptor()
                     break
 
             else:  # entrer non comprise

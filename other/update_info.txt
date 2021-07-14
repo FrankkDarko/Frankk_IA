@@ -43,3 +43,21 @@ Projet débuté le 03/07/2021
     ~ correctif de mdpgen
         > suppression de la possibilité de taper le chiffre du mode car cela fait bugger le programme
     ~ modification de infofkia
+
+> 14/07/2021 - FKIA_v_0.0.1.6 - correctif et crypteur:
+    ~ Déplacement vers le dossier other de :
+        > update_info
+        > ToDoList
+        > test.py
+    ~ Modification du readme
+    + Ajout d'un message de fin de programme
+    + Ajout de couleur dans :
+        > infofkia
+        > help
+        > main
+        > mdpgen
+        > cryptor
+    ~ Correction d'un bug pour la demande : Bonjour
+    + Ajout de réponse possible à Bonjour
+    + Ajout du crypteur / décrypteur : cryptor
+        > cryptage / décryptage disponible : ROT13, césar, vigenère

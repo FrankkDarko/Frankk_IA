@@ -85,7 +85,7 @@ while not exit_programme:
 d = "sortie"
 d2 = "exit"
 
-with open("knowledge/words.json") as jsonFile:
+with open("../knowledge/words.json") as jsonFile:
     words_load = json.load(jsonFile)
     for words in words_load["words"]:
 

@@ -1,10 +1,11 @@
 class Bonjour:
     demande = ["bonjour", "salut", "hello", "hi", "hey"]
-    reponse = ["Salut", "Bonjour"]
+    reponse = ["Salut", "Bonjour", "Hey", "Oh super content de te voir !"]
 
 
 class Commandes:
-    commandes = ["mdpgen", "8ball", "search", "pfc", "test", "exit", "sortie", "concombre", "help", "aide", "info"]
+    commandes = ["mdpgen", "8ball", "search", "pfc", "test", "exit", "sortie", "concombre", "help", "aide", "info",
+                 "cryptor", "crypteur"]
     alias = ["gen", "oracle", "ppc", "recherche"]
 
 
