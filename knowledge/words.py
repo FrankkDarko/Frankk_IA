@@ -5,8 +5,12 @@ class Bonjour:
 
 class Commandes:
     commandes = ["mdpgen", "8ball", "search", "pfc", "test", "exit", "sortie", "concombre", "help", "aide", "info",
-                 "cryptor", "crypteur"]
+                 "cryptor", "crypteur", "randomme", "rdme"]
     alias = ["gen", "oracle", "ppc", "recherche"]
+
+
+class Humour:
+    commandes = ["blague", "fait moi une blague", "raconte moi une blague"]
 
 
 class Amabilite:

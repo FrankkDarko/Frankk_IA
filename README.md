@@ -25,7 +25,9 @@ quelque petite commandes amusante et pratique
    
 *mdpgen, 8ball, search, pfc, exit, sortie, help, aide, gen, oracle, ppc, recherche, info, cryptor, crypteur*
 
-
+* **Humour**
+   
+*blague, fait moi une blague, raconte moi une blague*
 
 ## 3. Détail des options  
 
@@ -65,6 +67,16 @@ commande : `cryptor` `crypteur`
 > > * ROT13  
 > > * césar
 > > * vigenère
+
+commande : `randomme` `rdme`
+
+> Programme d'options aléatoire : 
+> >[1]  chiffre aléatoire entre 0 et 1000  
+> >[2]  chiffre aléatoire entre deux valeurs définit par vous  
+> >[3]  mot aléatoire en français  
+> >[4]  mot aléatoire en anglais  
+> >[5]  blague aléatoire  
+
 
 commande : `exit` `sortie`
 

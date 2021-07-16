@@ -5,10 +5,11 @@
 import random
 import pandas as pd
 import csv
-from utils import pfc, eightball, mdpgen, search, cryptor
+from utils import pfc, eightball, mdpgen, search, cryptor, randomme
 from knowledge import words, help, infofkia
 from colorama import Fore
 from colorama import Style
+import asyncio
 
 # entrée dans le programme
 print(Fore.YELLOW + "Bienvenue dans Frankk IA votre nouvelle ami !\n" + Style.RESET_ALL)
@@ -20,6 +21,7 @@ Bonjour = words.Bonjour
 Commandes = words.Commandes
 Amabilite = words.Amabilite
 JeNeSuisPasUnRobot = words.JeNeSuisPasUnRobot
+Humour = words.Humour
 exit_programme = False
 enter_user = Fore.GREEN + Style.BRIGHT + user + " > " + Fore.LIGHTCYAN_EX
 rep_bot = Fore.RED + Style.BRIGHT + "IA > " + Fore.LIGHTYELLOW_EX
@@ -117,6 +119,14 @@ while not exit_programme:
 
                 if enter == Commandes.commandes[11] or enter == Commandes.commandes[12]:  # Affiche la commande [info]
                     cryptor.cryptor()
+                    break
+
+                if enter == Commandes.commandes[13] or enter == Commandes.commandes[14]:  # Affiche la commande [info]
+                    randomme.randomme()
+                    break
+
+                if enter == Humour.commandes[0] or enter == Humour.commandes[1] or enter == Humour.commandes[2]:
+                    randomme.faituneblague()
                     break
 
             else:  # entrer non comprise

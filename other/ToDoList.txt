@@ -14,6 +14,8 @@ Choses a faire :
 
     [EN COURS] Faire un crypter / décrypter avec plusieurs option (md5, ROT13, etc )
 
+    [EN COURS] Système de divers option aléatoire : chiffre, mots, blague etc
+
 Choses fait :
 
     [FAIT] Retravailler me mdpgen pour qu'il soit plus complet

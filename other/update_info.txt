@@ -61,3 +61,17 @@ Projet débuté le 03/07/2021
     + Ajout de réponse possible à Bonjour
     + Ajout du crypteur / décrypteur : cryptor
         > cryptage / décryptage disponible : ROT13, césar, vigenère
+
+> 16/07/2021 - FKIA_v_0.0.1.7 - correctif et Random Me:
+    + Ajout du programme Random Me avec les options :
+        > chiffre aléatoire en 0 et 1000
+        > chiffre aléatoire en deux valeur choisis pas l'utilisateur
+        > mot aléatoire en Français
+        > mot aléatoire en Anglais
+        > blague aléatoire
+    + Ajout des couleur dans Random Me
+    + Ajout de la commande randomme et rdme pour lancé Random Me
+    ~ Modification du readme
+    ~ Modification de info_help
+    + Ajout de la possibilité de demandé une blague sans passer par Random Me
+
