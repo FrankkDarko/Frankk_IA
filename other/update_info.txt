@@ -75,3 +75,9 @@ Projet débuté le 03/07/2021
     ~ Modification de info_help
     + Ajout de la possibilité de demandé une blague sans passer par Random Me
 
+> 17/07/2021 - FKIA_v_0.0.1.8 - correctif et ajout de connaissances:
+    + Ajout de connaissance dans words
+    + Ajout de réponse dans le cas de Je ne suis pas un robot
+    + quelque correction d'orthographe
+    + Ajout du calcule de l'âge dans infifkia
+    + Ajout de ProfilIA dans words, Frankk IA donne sont nom et sont âge précis

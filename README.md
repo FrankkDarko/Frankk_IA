@@ -14,7 +14,7 @@ quelque petite commandes amusante et pratique
 
 * **Les phrase es mots compris**
 
-*bonjour, salut, hello, hi, hey, ça va ?, comment ça va ?, tu vas bien ?, oui, super, non, bof, tu es un robot ?, robot ?, tu es une ia ?*
+*bonjour, salut, hello, hi, hey, ça va ?, comment ça va ?, tu vas bien ?, oui, super, non, bof, tu es un robot ?, robot ?, tu es une ia ?, ia ?, comment t'appelles-tu ?, quelle est ton nom ?, tu t'appelles comment ?*
 
 * **Les réponses possible**
 

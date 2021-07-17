@@ -22,6 +22,7 @@ Commandes = words.Commandes
 Amabilite = words.Amabilite
 JeNeSuisPasUnRobot = words.JeNeSuisPasUnRobot
 Humour = words.Humour
+ProfilIA = words.ProfilIA
 exit_programme = False
 enter_user = Fore.GREEN + Style.BRIGHT + user + " > " + Fore.LIGHTCYAN_EX
 rep_bot = Fore.RED + Style.BRIGHT + "IA > " + Fore.LIGHTYELLOW_EX
@@ -83,8 +84,7 @@ while not exit_programme:
                 if enter == Amabilite.demande[0] or enter == Amabilite.demande[1] \
                         or enter == Amabilite.demande[2]:  # répond à "ça va ?"
                     print(rep_bot + Amabilite.reponse[0])
-                    enter = input(enter_user)
-                    enter = enter.lower()
+                    enter = input(enter_user).lower()
                     if enter == Amabilite.demande[3] or enter == Amabilite.demande[4]:
                         print(rep_bot + Amabilite.reponse[1])
                         break
@@ -95,10 +95,15 @@ while not exit_programme:
                 if enter == JeNeSuisPasUnRobot.demande[i]:  # car ce n'est pas un robot !
                     random_rep_JNSPUR = random.randint(0, len(JeNeSuisPasUnRobot.reponse) - 1)
                     print(rep_bot + JeNeSuisPasUnRobot.reponse[random_rep_JNSPUR])
-                    break
+                    enter = input(enter_user).lower()
+                    if enter == JeNeSuisPasUnRobot.rep_hum[0]:
+                        print(rep_bot + JeNeSuisPasUnRobot.rep_bot[1])
+                        break
+                    if enter == JeNeSuisPasUnRobot.rep_hum[1] or enter == JeNeSuisPasUnRobot.rep_hum[2]:
+                        print(rep_bot + JeNeSuisPasUnRobot.rep_bot[0])
+                        break
 
-                if enter == Commandes.commandes[0] or enter == Commandes.alias[
-                    0]:  # Générateur de mots de passes [mdpgen]
+                if enter == Commandes.commandes[0] or enter == Commandes.alias[0]:  # Générateur de mots de passes [mdpgen]
                     print(rep_bot + "Je vous lance le programme générateur de mots de passe")
                     mdpgen.generator()
                     break
@@ -108,8 +113,8 @@ while not exit_programme:
                 if enter == Commandes.commandes[2] or enter == Commandes.alias[3]:  # pour faire des recherches
                     search.search()
                     break
-                if enter == Commandes.commandes[3] or enter == Commandes.alias[
-                    2]:  # Commande pierre papier ciseaux [pfc]
+                if enter == Commandes.commandes[3] \
+                        or enter == Commandes.alias[2]:  # Commande pierre papier ciseaux [pfc]
                     print(rep_bot + "Lancement du pierre feuille ciseaux")
                     pfc.ppc()
                     break
@@ -117,16 +122,25 @@ while not exit_programme:
                     help.help_me()
                     break
 
-                if enter == Commandes.commandes[11] or enter == Commandes.commandes[12]:  # Affiche la commande [info]
+                if enter == Commandes.commandes[11] or enter == Commandes.commandes[12]:  # Affiche la commande [cryptor]
                     cryptor.cryptor()
                     break
 
-                if enter == Commandes.commandes[13] or enter == Commandes.commandes[14]:  # Affiche la commande [info]
+                if enter == Commandes.commandes[13] or enter == Commandes.commandes[14]:  # Affiche la commande [randomme]
                     randomme.randomme()
                     break
 
-                if enter == Humour.commandes[0] or enter == Humour.commandes[1] or enter == Humour.commandes[2]:
+                if enter == Humour.commandes[0] or enter == Humour.commandes[1] \
+                        or enter == Humour.commandes[2]:  # Lance des blague
                     randomme.faituneblague()
+                    break
+                if enter == ProfilIA.q_nom[0] or enter == ProfilIA.q_nom[1] or enter == ProfilIA.q_nom[2]:
+                    random_rep_ProfilIA = random.randint(0, len(ProfilIA.r_nom) - 1)
+                    print(rep_bot + ProfilIA.r_nom[random_rep_ProfilIA])
+                    break
+
+                if enter == ProfilIA.q_age[0] or enter == ProfilIA.q_age[1]:  # Demande l'âge
+                    infofkia.ageIA()
                     break
 
             else:  # entrer non comprise

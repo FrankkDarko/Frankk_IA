@@ -16,6 +16,8 @@ Choses a faire :
 
     [EN COURS] Système de divers option aléatoire : chiffre, mots, blague etc
 
+    [EN COURS] plus d'information sur l'ia ( sentiment, ressentie,- etc )
+
 Choses fait :
 
     [FAIT] Retravailler me mdpgen pour qu'il soit plus complet
