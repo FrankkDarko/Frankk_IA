@@ -81,3 +81,12 @@ Projet débuté le 03/07/2021
     + quelque correction d'orthographe
     + Ajout du calcule de l'âge dans infifkia
     + Ajout de ProfilIA dans words, Frankk IA donne sont nom et sont âge précis
+
+> 18/07/2021 - FKIA_v_0.0.1.9 - correctif et ajout des sentiments:
+    + Ajout du fichier sentiments
+        > ajout des classe des different sentiments
+        > ajout du calcul de choix du ressentie
+        > affichage du ressentie
+    + Ajout de réponse possible dans le cas d'une discution
+        > Savoir si il a des sentiments
+        > qu'il dise comment il se sent ( évolution de la réponse à "ça va ?")

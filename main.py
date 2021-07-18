@@ -6,10 +6,9 @@ import random
 import pandas as pd
 import csv
 from utils import pfc, eightball, mdpgen, search, cryptor, randomme
-from knowledge import words, help, infofkia
+from knowledge import words, help, infofkia, sentiments
 from colorama import Fore
 from colorama import Style
-import asyncio
 
 # entrée dans le programme
 print(Fore.YELLOW + "Bienvenue dans Frankk IA votre nouvelle ami !\n" + Style.RESET_ALL)
@@ -70,7 +69,6 @@ while not exit_programme:
                 break
 
             for i in range(len(enter)):
-                random_rep_bonjour = random.randint(0, len(Bonjour.reponse) - 1)
 
                 if enter == Commandes.commandes[10]:  # Affiche la commande [info]
                     infofkia.info_of_fkia()
@@ -78,18 +76,21 @@ while not exit_programme:
 
                 if enter == Bonjour.demande[0] or enter == Bonjour.demande[1] or enter == Bonjour.demande[2] \
                         or enter == Bonjour.demande[3] or enter == Bonjour.demande[4]:  # Salutation
+                    random_rep_bonjour = random.randint(0, len(Bonjour.reponse) - 1)
                     print(rep_bot + Bonjour.reponse[random_rep_bonjour])
                     break
 
                 if enter == Amabilite.demande[0] or enter == Amabilite.demande[1] \
-                        or enter == Amabilite.demande[2]:  # répond à "ça va ?"
-                    print(rep_bot + Amabilite.reponse[0])
+                        or enter == Amabilite.demande[2] or enter == Amabilite.demande[7]:  # répond à "ça va ?"
+                    sentiments.iasentiments()
+                    print(rep_bot + "et toi ?")
                     enter = input(enter_user).lower()
                     if enter == Amabilite.demande[3] or enter == Amabilite.demande[4]:
-                        print(rep_bot + Amabilite.reponse[1])
+                        print(rep_bot + Amabilite.reponse[0])
                         break
                     if enter == Amabilite.demande[5] or enter == Amabilite.demande[6]:
-                        print(rep_bot + Amabilite.reponse[2])
+                        rep = random.randint(1, 2)
+                        print(rep_bot + Amabilite.reponse[rep])
                         break
 
                 if enter == JeNeSuisPasUnRobot.demande[i]:  # car ce n'est pas un robot !
@@ -134,13 +135,19 @@ while not exit_programme:
                         or enter == Humour.commandes[2]:  # Lance des blague
                     randomme.faituneblague()
                     break
-                if enter == ProfilIA.q_nom[0] or enter == ProfilIA.q_nom[1] or enter == ProfilIA.q_nom[2]:
+
+                if enter == ProfilIA.q_nom[0] or enter == ProfilIA.q_nom[1] or enter == ProfilIA.q_nom[2]:  # Donne son nom
                     random_rep_ProfilIA = random.randint(0, len(ProfilIA.r_nom) - 1)
                     print(rep_bot + ProfilIA.r_nom[random_rep_ProfilIA])
                     break
 
-                if enter == ProfilIA.q_age[0] or enter == ProfilIA.q_age[1]:  # Demande l'âge
+                if enter == ProfilIA.q_age[0] or enter == ProfilIA.q_age[1]:  # Donne l'âge
                     infofkia.ageIA()
+                    break
+
+                if enter == ProfilIA.q_sentiments[0] or enter == ProfilIA.q_sentiments[1]:  # Demande si il a des sentiments
+                    random_rep_SENTIMENTS = random.randint(0, len(ProfilIA.r_sentiments) - 1)
+                    print(rep_bot + ProfilIA.r_sentiments[random_rep_SENTIMENTS])
                     break
 
             else:  # entrer non comprise

@@ -14,8 +14,9 @@ class Humour:
 
 
 class Amabilite:
-    demande = ["ça va ?", "comment ça va ?", "tu vas bien ?", "oui", "super", "non", "bof"]
-    reponse = ["Bien et toi ?", "Je suis heureux que ça aille bien", "oh.... tu peux jouer si tu veux (fait : help)"]
+    demande = ["ça va ?", "comment ça va ?", "tu vas bien ?", "oui", "super", "non", "bof", "comment te sens tu ?"]
+    reponse = ["Je suis heureux que ça aille bien", "Tu peut toujours me demandé une blague !",
+               "oh.... tu peux jouer si tu veux (fait : help)"]
 
 
 class JeNeSuisPasUnRobot:
@@ -29,4 +30,7 @@ class ProfilIA:
     q_nom = ["comment t'appelles-tu ?", "quelle est ton nom ?", "tu t'appelles comment ?"]
     r_nom = ["Je m'appelle Frankk comme mon créateur", "Mon créateur ma nommée comme lui, Frankk"]
     q_age = ["quelle âge a tu ?", "tu à quelle âge ?"]
-    r_age = []  # Réponse par infofkia
+    r_age = []  # Réponse par infofkia.ageIA()
+    q_sentiments = ["tu ressent des sentiments ?", "tu a des sentiments ?"]
+    r_sentiments = ["Oui j'ai des sentiment et mon petit caractère"]
+
