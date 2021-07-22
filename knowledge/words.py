@@ -10,13 +10,15 @@ class Commandes:
 
 
 class Humour:
-    commandes = ["blague", "fais moi une blague", "raconte moi une blague"]
+    commandes = ["blague", "fais moi une blague", "raconte moi une blague", "humour"]
 
 
 class Amabilite:
-    demande = ["ça va ?", "comment ça va ?", "tu vas bien ?", "oui", "super", "non", "bof", "comment te sens tu ?"]
-    reponse = ["Je suis heureux que ça aille bien", "Tu peut toujours me demandé une blague !",
-               "oh.... tu peux jouer si tu veux (fait : help)"]
+    demande = ["ça va ?", "comment ça va ?", "tu vas bien ?", "comment te sens tu ?"]
+    rep_hum_good = ["oui", "super"]
+    rep_hum_bad = ["non", "bof"]
+    reponse_good = ["Je suis heureux que ça aille bien"]
+    reponse_bad = ["Tu peut toujours me demandé une blague !", "oh.... tu peux jouer si tu veux (fait : help)"]
 
 
 class JeNeSuisPasUnRobot:
@@ -31,6 +33,7 @@ class ProfilIA:
     r_nom = ["Je m'appelle Frankk comme mon créateur", "Mon créateur ma nommée comme lui, Frankk"]
     q_age = ["quelle âge a tu ?", "tu à quelle âge ?"]
     r_age = []  # Réponse par infofkia.ageIA()
-    q_sentiments = ["tu ressent des sentiments ?", "tu a des sentiments ?"]
-    r_sentiments = ["Oui j'ai des sentiment et mon petit caractère"]
+    q_sentiments = ["tu ressent des sentiments ?", "tu a des sentiments ?", "tu à des émotions ?"]
+    r_sentiments = ["Oui j'ai des sentiment et mon petit caractère", "je ressent divert émotion et sentiment",
+                    "Je peut ressentir des sentiment / émotions mais j'ai du mal à savoir pourquoi"]
 

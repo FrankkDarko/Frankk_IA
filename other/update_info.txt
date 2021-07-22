@@ -90,3 +90,7 @@ Projet débuté le 03/07/2021
     + Ajout de réponse possible dans le cas d'une discution
         > Savoir si il a des sentiments
         > qu'il dise comment il se sent ( évolution de la réponse à "ça va ?")
+
+> 21/07/2021 - FKIA_v_0.0.2.0 - refonte du main:
+    + Refonte du main.py pour une meilleur optimisation de lecture du code et réduire la taille des ligne
+    + Amelioration du fichier word pour une meilleur structure des demandes et réponses

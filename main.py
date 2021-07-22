@@ -23,6 +23,7 @@ JeNeSuisPasUnRobot = words.JeNeSuisPasUnRobot
 Humour = words.Humour
 ProfilIA = words.ProfilIA
 exit_programme = False
+fund = False
 enter_user = Fore.GREEN + Style.BRIGHT + user + " > " + Fore.LIGHTCYAN_EX
 rep_bot = Fore.RED + Style.BRIGHT + "IA > " + Fore.LIGHTYELLOW_EX
 
@@ -61,100 +62,135 @@ while not exit_programme:
     print(rep_bot + "Ont fait quoi maintenant ?")
 
     while not exit_programme:
-        try:
-            enter = input(enter_user).lower()
-            if enter == Commandes.commandes[5] or enter == Commandes.commandes[6]:  # Sortie du programe [sortie] [exit]
-                print(rep_bot + "Bye et à bientôt !")
-                exit_programme = True
+
+        enter = input(enter_user).lower()
+        fund = False
+
+        for i in range(len(Commandes.commandes)):
+            if enter == Commandes.commandes[10]:  # Affiche la commande [info]
+                infofkia.info_of_fkia()
+                fund = True
                 break
 
-            for i in range(len(enter)):
+            if enter == Commandes.commandes[0] \
+                    or enter == Commandes.alias[0]:  # Générateur de mots de passes [mdpgen]
+                print(rep_bot + "Je vous lance le programme générateur de mots de passe")
+                mdpgen.generator()
+                fund = True
+                break
 
-                if enter == Commandes.commandes[10]:  # Affiche la commande [info]
-                    infofkia.info_of_fkia()
-                    break
+            if enter == Commandes.commandes[1] or enter == Commandes.alias[1]:  # pour jouer au 8ball [8ball]
+                eightball.oracle()
+                fund = True
+                break
 
-                if enter == Bonjour.demande[0] or enter == Bonjour.demande[1] or enter == Bonjour.demande[2] \
-                        or enter == Bonjour.demande[3] or enter == Bonjour.demande[4]:  # Salutation
-                    random_rep_bonjour = random.randint(0, len(Bonjour.reponse) - 1)
-                    print(rep_bot + Bonjour.reponse[random_rep_bonjour])
-                    break
+            if enter == Commandes.commandes[2] or enter == Commandes.alias[3]:  # pour faire des recherches
+                search.search()
+                fund = True
+                break
 
-                if enter == Amabilite.demande[0] or enter == Amabilite.demande[1] \
-                        or enter == Amabilite.demande[2] or enter == Amabilite.demande[7]:  # répond à "ça va ?"
-                    sentiments.iasentiments()
-                    print(rep_bot + "et toi ?")
-                    enter = input(enter_user).lower()
-                    if enter == Amabilite.demande[3] or enter == Amabilite.demande[4]:
-                        print(rep_bot + Amabilite.reponse[0])
+            if enter == Commandes.commandes[3] \
+                    or enter == Commandes.alias[2]:  # Commande pierre papier ciseaux [pfc]
+                print(rep_bot + "Lancement du pierre feuille ciseaux")
+                pfc.ppc()
+                fund = True
+                break
+
+            if enter == Commandes.commandes[8] or enter == Commandes.commandes[9]:  # Commande Help [help] ou [aide]
+                help.help_me()
+                fund = True
+                break
+
+            if enter == Commandes.commandes[11] \
+                    or enter == Commandes.commandes[12]:  # Affiche la commande [cryptor]
+                cryptor.cryptor()
+                fund = True
+                break
+
+            if enter == Commandes.commandes[13] \
+                    or enter == Commandes.commandes[14]:  # Affiche la commande [randomme]
+                randomme.randomme()
+                fund = True
+                break
+
+            if enter == Commandes.commandes[5] \
+                    or enter == Commandes.commandes[6]:  # Sortie du programe [sortie] [exit]
+                print(rep_bot + "Bye et à bientôt !")
+                exit_programme = True
+                fund = True
+                break
+
+        for i in range(len(Bonjour.demande)):
+
+            if enter == Bonjour.demande[i]:  # Salutation
+                random_rep_bonjour = random.randint(0, len(Bonjour.reponse) - 1)
+                print(rep_bot + Bonjour.reponse[random_rep_bonjour])
+                fund = True
+                break
+
+        for i in range(len(Amabilite.demande)):
+
+            if enter == Amabilite.demande[i]:  # répond à "ça va ?"
+                sentiments.iasentiments()
+                print(rep_bot + "et toi ?")
+                enter = input(enter_user).lower()
+                for e in range(len(Amabilite.rep_hum_good)):
+                    if enter == Amabilite.rep_hum_good[e]:
+                        random_rep_good = random.randint(0, len(Amabilite.reponse_good) - 1)
+                        print(rep_bot + Amabilite.reponse_good[random_rep_good])
+                        fund = True
                         break
-                    if enter == Amabilite.demande[5] or enter == Amabilite.demande[6]:
-                        rep = random.randint(1, 2)
-                        print(rep_bot + Amabilite.reponse[rep])
+                for f in range(len(Amabilite.rep_hum_bad)):
+                    if enter == Amabilite.rep_hum_bad[f]:
+                        random_rep_bad = random.randint(0, len(Amabilite.reponse_bad) - 1)
+                        print(rep_bot + Amabilite.reponse_bad[random_rep_bad])
+                        fund = True
                         break
 
-                if enter == JeNeSuisPasUnRobot.demande[i]:  # car ce n'est pas un robot !
-                    random_rep_JNSPUR = random.randint(0, len(JeNeSuisPasUnRobot.reponse) - 1)
-                    print(rep_bot + JeNeSuisPasUnRobot.reponse[random_rep_JNSPUR])
-                    enter = input(enter_user).lower()
-                    if enter == JeNeSuisPasUnRobot.rep_hum[0]:
-                        print(rep_bot + JeNeSuisPasUnRobot.rep_bot[1])
-                        break
-                    if enter == JeNeSuisPasUnRobot.rep_hum[1] or enter == JeNeSuisPasUnRobot.rep_hum[2]:
-                        print(rep_bot + JeNeSuisPasUnRobot.rep_bot[0])
-                        break
+        for i in range(len(JeNeSuisPasUnRobot.demande)):
 
-                if enter == Commandes.commandes[0] or enter == Commandes.alias[0]:  # Générateur de mots de passes [mdpgen]
-                    print(rep_bot + "Je vous lance le programme générateur de mots de passe")
-                    mdpgen.generator()
+            if enter == JeNeSuisPasUnRobot.demande[i]:  # car ce n'est pas un robot !
+                random_rep_JNSPUR = random.randint(0, len(JeNeSuisPasUnRobot.reponse) - 1)
+                print(rep_bot + JeNeSuisPasUnRobot.reponse[random_rep_JNSPUR])
+                enter = input(enter_user).lower()
+                if enter == JeNeSuisPasUnRobot.rep_hum[0]:
+                    print(rep_bot + JeNeSuisPasUnRobot.rep_bot[1])
+                    fund = True
                     break
-                if enter == Commandes.commandes[1] or enter == Commandes.alias[1]:  # pour jouer au 8ball [8ball]
-                    eightball.oracle()
-                    break
-                if enter == Commandes.commandes[2] or enter == Commandes.alias[3]:  # pour faire des recherches
-                    search.search()
-                    break
-                if enter == Commandes.commandes[3] \
-                        or enter == Commandes.alias[2]:  # Commande pierre papier ciseaux [pfc]
-                    print(rep_bot + "Lancement du pierre feuille ciseaux")
-                    pfc.ppc()
-                    break
-                if enter == Commandes.commandes[8] or enter == Commandes.commandes[9]:  # Commande Help [help] ou [aide]
-                    help.help_me()
+                if enter == JeNeSuisPasUnRobot.rep_hum[1] or enter == JeNeSuisPasUnRobot.rep_hum[2]:
+                    print(rep_bot + JeNeSuisPasUnRobot.rep_bot[0])
+                    fund = True
                     break
 
-                if enter == Commandes.commandes[11] or enter == Commandes.commandes[12]:  # Affiche la commande [cryptor]
-                    cryptor.cryptor()
-                    break
+        for i in range(len(Humour.commandes)):
 
-                if enter == Commandes.commandes[13] or enter == Commandes.commandes[14]:  # Affiche la commande [randomme]
-                    randomme.randomme()
-                    break
+            if enter == Humour.commandes[i]:  # Lance des blague
+                randomme.faituneblague()
+                fund = True
+                break
 
-                if enter == Humour.commandes[0] or enter == Humour.commandes[1] \
-                        or enter == Humour.commandes[2]:  # Lance des blague
-                    randomme.faituneblague()
-                    break
+        for i in range(len(ProfilIA.q_nom)):
 
-                if enter == ProfilIA.q_nom[0] or enter == ProfilIA.q_nom[1] or enter == ProfilIA.q_nom[2]:  # Donne son nom
-                    random_rep_ProfilIA = random.randint(0, len(ProfilIA.r_nom) - 1)
-                    print(rep_bot + ProfilIA.r_nom[random_rep_ProfilIA])
-                    break
+            if enter == ProfilIA.q_nom[i]:  # Donne son nom
+                random_rep_ProfilIA = random.randint(0, len(ProfilIA.r_nom) - 1)
+                print(rep_bot + ProfilIA.r_nom[random_rep_ProfilIA])
+                fund = True
+                break
 
-                if enter == ProfilIA.q_age[0] or enter == ProfilIA.q_age[1]:  # Donne l'âge
-                    infofkia.ageIA()
-                    break
+        for i in range(len(ProfilIA.q_age)):
 
-                if enter == ProfilIA.q_sentiments[0] or enter == ProfilIA.q_sentiments[1]:  # Demande si il a des sentiments
-                    random_rep_SENTIMENTS = random.randint(0, len(ProfilIA.r_sentiments) - 1)
-                    print(rep_bot + ProfilIA.r_sentiments[random_rep_SENTIMENTS])
-                    break
+            if enter == ProfilIA.q_age[i]:  # Donne l'âge
+                infofkia.ageIA()
+                fund = True
+                break
 
-            else:  # entrer non comprise
-                print(rep_bot + "J'ai rien compris !")
-        except IndexError:
-            print(rep_bot + "Je n'est pas pus vérifier cette information, merci de recommencé")
+        for i in range(len(ProfilIA.q_age)):
 
-"""
+            if enter == ProfilIA.q_sentiments[i]:  # Demande si il a des sentiments
+                random_rep_SENTIMENTS = random.randint(0, len(ProfilIA.r_sentiments) - 1)
+                print(rep_bot + ProfilIA.r_sentiments[random_rep_SENTIMENTS])
+                fund = True
+                break
 
-"""
+        if not fund:
+            print(rep_bot + "Je n'es pas compris votre message, merci de recommencé")

@@ -32,3 +32,5 @@ Choses fait :
     [FAIT] mdpgen : option phrase modifier
 
     [FAIT] Rendre plus esthétique les print
+
+    [FAIT] optimisé la verification de l'entrer

@@ -28,7 +28,8 @@ class Degout:
 
 
 class Joie:
-    resultat = ["Je ne sais pas si chez toi il fait beau mais ici il fait un temps merveilleux", "Je me sens super bien !", "Je suis tellement heureux de parler a des gens !"]
+    resultat = ["Je ne sais pas si chez toi il fait beau mais ici il fait un temps merveilleux",
+                "Je me sens super bien !", "Je suis tellement heureux de parler a des gens !"]
 
 
 def iasentiments():
