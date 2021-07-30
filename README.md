@@ -84,10 +84,12 @@ commande : `exit` `sortie`
 
 ## 4. Vue du programme
 
-####GUI : 
+####GUI :  
+
 ![Vue programme en GUI](img/vue/identification GUI.png)
 
 ![Vue programme identification en GUI](img/vue/vue_main_GUI.png)
 
-####Terminale : 
+####Terminale :   
+
 ![Vue programme en terminal](img/vue/fkia terminal.png)
