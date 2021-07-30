@@ -86,10 +86,10 @@ commande : `exit` `sortie`
 
 ####GUI :  
 
-![Vue programme en GUI](img/vue/identification GUI.png)
+![Vue programme en GUI](img/vue/identification_GUI.png)
 
 ![Vue programme identification en GUI](img/vue/vue_main_GUI.png)
 
 ####Terminale :   
 
-![Vue programme en terminal](img/vue/fkia terminal.png)
+![Vue programme en terminal](img/vue/fkia_terminal.png)
