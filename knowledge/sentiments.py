@@ -57,27 +57,34 @@ def iasentiments():
     if ressentie == sentiments[0]:
         random_rep_PEUR = random.randint(0, len(Peur.resultat) - 1)
         print(Fore.RED + Style.BRIGHT + "IA > " + Fore.LIGHTYELLOW_EX + Peur.resultat[random_rep_PEUR])
+        return Peur.resultat[random_rep_PEUR]
 
     if ressentie == sentiments[1]:
         random_rep_COLERE = random.randint(0, len(Colere.resultat) - 1)
         print(Fore.RED + Style.BRIGHT + "IA > " + Fore.LIGHTYELLOW_EX + Colere.resultat[random_rep_COLERE])
+        return Colere.resultat[random_rep_COLERE]
 
     if ressentie == sentiments[2]:
         random_rep_TRISTESSE = random.randint(0, len(Tristesse.resultat) - 1)
         print(Fore.RED + Style.BRIGHT + "IA > " + Fore.LIGHTYELLOW_EX + Tristesse.resultat[random_rep_TRISTESSE])
+        return Tristesse.resultat[random_rep_TRISTESSE]
 
     if ressentie == sentiments[3]:
         random_rep_DOULEUR = random.randint(0, len(Douleur.resultat) - 1)
         print(Fore.RED + Style.BRIGHT + "IA > " + Fore.LIGHTYELLOW_EX + Douleur.resultat[random_rep_DOULEUR])
+        return Douleur.resultat[random_rep_DOULEUR]
 
     if ressentie == sentiments[4]:
         random_rep_AMOUR = random.randint(0, len(Amour.resultat) - 1)
         print(Fore.RED + Style.BRIGHT + "IA > " + Fore.LIGHTYELLOW_EX + Amour.resultat[random_rep_AMOUR])
+        return Amour.resultat[random_rep_AMOUR]
 
     if ressentie == sentiments[5]:
         random_rep_DEGOUT = random.randint(0, len(Degout.resultat) - 1)
         print(Fore.RED + Style.BRIGHT + "IA > " + Fore.LIGHTYELLOW_EX + Degout.resultat[random_rep_DEGOUT])
+        return Degout.resultat[random_rep_DEGOUT]
 
     if ressentie == sentiments[6]:
         random_rep_JOIE = random.randint(0, len(Joie.resultat) - 1)
         print(Fore.RED + Style.BRIGHT + "IA > " + Fore.LIGHTYELLOW_EX + Joie.resultat[random_rep_JOIE])
+        return Joie.resultat[random_rep_JOIE]

@@ -6,7 +6,7 @@ __Voici mon premier programme python sous l'idée d'un chatbox__
 
 ## 1. Présentation
 
-Frankk IA es un petit programme sous forme de terminal, qui repond a certaine phrase et inclu
+Frankk IA es un petit programme sous forme de terminal ou d'interface graphique, qui repond a certaine phrase et inclu
 quelque petite commandes amusante et pratique
 
 ## 2. Connaissances
@@ -81,3 +81,13 @@ commande : `randomme` `rdme`
 commande : `exit` `sortie`
 
 > Ferme Frankk IA
+
+## 4. Vue du programme
+
+####GUI : 
+![Vue programme en GUI](img/vue/identification GUI.png)
+
+![Vue programme identification en GUI](img/vue/vue_main_GUI.png)
+
+####Terminale : 
+![Vue programme en terminal](img/vue/fkia terminal.png)

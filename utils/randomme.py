@@ -20,8 +20,10 @@ def faituneblague():
         print(
             Fore.RED + Style.BRIGHT + "IA > " + Fore.LIGHTGREEN_EX + blg_joke + "\n" + Fore.RED + Style.BRIGHT +
             "IA > " + Fore.LIGHTMAGENTA_EX + blg_answer + Style.RESET_ALL)
+        blg_fin = "IA > " + blg_joke + "\n" + "IA > " + blg_answer
+        return blg_fin
 
-    asyncio.run(blague())
+    return asyncio.run(blague())
 
 
 def randomme():

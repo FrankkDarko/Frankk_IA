@@ -26,6 +26,8 @@ def ageIA():
     print(Fore.RED + Style.BRIGHT + "IA > " + Fore.LIGHTYELLOW_EX + "Je suis né le 03/07/2021 j'ai donc " + str(y) +
           " ans, " + str(m) + " mois, " + str(d) + " jours, " + str(h) + " heures, " + str(mn) + " minutes, " + str(s)
           + " secondes")
+    age = "Je suis né le 03/07/2021 j'ai donc " + str(y) + " ans, " + str(m) + " mois, " + str(d) + " jours, " + str(h) + " heures, " + str(mn) + " minutes, " + str(s) + " secondes"
+    return age
 
 
 def info_of_fkia():

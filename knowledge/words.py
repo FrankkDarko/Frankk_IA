@@ -15,8 +15,8 @@ class Humour:
 
 class Amabilite:
     demande = ["ça va ?", "comment ça va ?", "tu vas bien ?", "comment te sens tu ?"]
-    rep_hum_good = ["oui", "super"]
-    rep_hum_bad = ["non", "bof"]
+    rep_hum_good = ["oui", "super", "bien", "génial", "yep"]
+    rep_hum_bad = ["non", "bof", "pas trop", "pas du tout"]
     reponse_good = ["Je suis heureux que ça aille bien"]
     reponse_bad = ["Tu peut toujours me demandé une blague !", "oh.... tu peux jouer si tu veux (fait : help)"]
 

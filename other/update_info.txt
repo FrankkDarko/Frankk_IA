@@ -94,3 +94,15 @@ Projet débuté le 03/07/2021
 > 21/07/2021 - FKIA_v_0.0.2.0 - refonte du main:
     + Refonte du main.py pour une meilleur optimisation de lecture du code et réduire la taille des ligne
     + Amelioration du fichier word pour une meilleur structure des demandes et réponses
+
+> 30/07/2021 - FKIA_v_0.0.3.0 - graphical user interface (GUI) :
+    + Mise en place d'une interface graphique : main_gui.py
+    + Adaptation du code à l'interface graphique
+    + Ajout de connexion.py pour la prise de l'utilisateur en mode GUI
+    + Adaptation de mdpgen en mode graphique
+    + Ajout des couleurs au prefix de message en mode GUI
+    + Modification du theme du GUI
+    + Adaptation de la commande help en mode GUI
+    + Ajout d'un message erreur pour les options non fonctionnel actuellement
+    + Mise à jour du readme
+
