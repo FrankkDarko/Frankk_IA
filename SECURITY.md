@@ -6,8 +6,8 @@ Normalement aucune faille de sécurité n'est présente ou aucune ne mais en dan
 
 | Version   | Supported          |
 | --------- | ------------------ |
-| 0.0.1.7   | :white_check_mark: |
-| < 0.0.1.6 | :x:                |
+| 0.0.3.0   | :white_check_mark: |
+| < 0.0.2.0 | :x:                |
 
 ## Reporting a Vulnerability
 
