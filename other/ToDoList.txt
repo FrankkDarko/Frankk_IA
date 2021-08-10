@@ -1,4 +1,5 @@
-Choses a faire :
+Choses a faire mode terminal :
+
 
     ALL_TIME > Trouver de nouvelle idée et amelioration et mettre au propre le projet
 
@@ -18,6 +19,13 @@ Choses a faire :
 
     [EN COURS] plus d'information sur l'ia ( sentiment, ressentie,- etc )
 
+------------------------------------------------------------------------------------------------------------------------
+
+Choses a faire mode GUI :
+
+    + création d'utilisateur à la connexion
+
+------------------------------------------------------------------------------------------------------------------------
 Choses fait :
 
     [FAIT] Retravailler me mdpgen pour qu'il soit plus complet

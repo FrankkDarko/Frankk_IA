@@ -4,6 +4,15 @@
 
 __Voici mon premier programme python sous l'idée d'un chatbox__
 
+## 0. Installation
+```$ git clone https://github.com/FrankkDarko/Frankk_IA.git```  
+
+```$ pip install -r requirements.txt```  
+
+mode terminal : ```$ python3 main.py``` 
+
+mode GUI : ```$ python3 main_gui.py``` 
+
 ## 1. Présentation
 
 Frankk IA es un petit programme sous forme de terminal ou d'interface graphique, qui repond a certaine phrase et inclu

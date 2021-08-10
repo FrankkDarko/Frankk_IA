@@ -31,7 +31,7 @@ def ageIA():
 
 
 def info_of_fkia():
-    version_fkia = "FKIA_v_0.0.1.7"  # Versions de Frankk IA
+    version_fkia = "FKIA_v_0.0.3.0"  # Versions de Frankk IA
 
     print(Fore.RED + Style.BRIGHT +
           "---------------------------------------\n"
