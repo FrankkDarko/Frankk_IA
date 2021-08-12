@@ -2,7 +2,7 @@
 
 <center><img src="https://frankkdarko.fr/wp-content/uploads/2021/07/pp.jpg" width="300" height="300"></center>
 
-__Voici mon premier programme python sous l'idée d'un chatbox__
+__Voici mon premier programme python sous l'idée d'un chatbot__
 
 ## 0. Installation
 ```$ git clone https://github.com/FrankkDarko/Frankk_IA.git```  
@@ -40,11 +40,13 @@ quelque petite commandes amusante et pratique
 
 ## 3. Détail des options  
 
-commande : `help` `aide`
+commande : `help` `aide`  
+mode terminal :white_check_mark: || mode GUI :white_check_mark:
 
 > Lance la commande d'aide
 
-commande : `mdpgen` `gen`
+commande : `mdpgen` `gen`  
+mode terminal :white_check_mark: || mode GUI :white_check_mark:
 
 > Génere des mots de passe, il y a different options possible :
 >> [1] Faible : 6 carractére aléatoire  
@@ -54,30 +56,36 @@ commande : `mdpgen` `gen`
 >> [5] Perso : vous définisser chaque paramètre  
 >> [6] Phrase : modifie une phrase de votre choix
 
-commande : `8ball` `oracle`
+commande : `8ball` `oracle`  
+mode terminal :white_check_mark: || mode GUI :x:
 
 > Répond aléatoirement à la phrase donnée, serait-ce la réponse du destin ?
 
-commande : `search` `recherche`
+commande : `search` `recherche`  
+mode terminal :white_check_mark: || mode GUI :x:
 
 > Lance une multiple recherche sur different moteur de recherche
 
-commande : `pfc` `ppc`
+commande : `pfc` `ppc`  
+mode terminal :white_check_mark: || mode GUI :x:
 
 > Lance un pierre feuille ciseaux
 
-commande : `info`
+commande : `info`  
+mode terminal :white_check_mark: || mode GUI :x:
 
 > Affiche les informations du programme
 
-commande : `cryptor` `crypteur`
+commande : `cryptor` `crypteur`  
+mode terminal :white_check_mark: || mode GUI :x:
 
 > Programme de cryptage et décryptage avec actuellement :
 > > * ROT13  
 > > * césar
 > > * vigenère
 
-commande : `randomme` `rdme`
+commande : `randomme` `rdme`  
+mode terminal :white_check_mark: || mode GUI :x:
 
 > Programme d'options aléatoire : 
 > >[1]  chiffre aléatoire entre 0 et 1000  
@@ -87,7 +95,8 @@ commande : `randomme` `rdme`
 > >[5]  blague aléatoire  
 
 
-commande : `exit` `sortie`
+commande : `exit` `sortie`  
+mode terminal :white_check_mark: || mode GUI :white_check_mark:
 
 > Ferme Frankk IA
 

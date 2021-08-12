@@ -147,6 +147,7 @@ def discussion():
             t.insert('end', rep_bot, 'ia')
             t.insert('end', "et toi ?" + "\n")
             t['state'] = 'disabled'
+
     for i in range(len(Amabilite.rep_hum_good)):
         if enter == Amabilite.rep_hum_good[i]:
             random_rep_good = random.randint(0, len(Amabilite.reponse_good) - 1)
@@ -156,6 +157,7 @@ def discussion():
             print(rep_bot + Amabilite.reponse_good[random_rep_good])
             fund_words = True
             break
+
     for i in range(len(Amabilite.rep_hum_bad)):
         if enter == Amabilite.rep_hum_bad[i]:
             random_rep_bad = random.randint(0, len(Amabilite.reponse_bad) - 1)
@@ -175,6 +177,7 @@ def discussion():
             t.insert('end', JeNeSuisPasUnRobot.reponse[random_rep_JNSPUR] + "\n")
             t['state'] = 'disabled'
             enter = input(enter_user).lower()
+
             if enter == JeNeSuisPasUnRobot.rep_hum[0]:
                 print(rep_bot + JeNeSuisPasUnRobot.rep_bot[1])
                 t.insert('end', rep_bot, 'ia')
@@ -182,6 +185,7 @@ def discussion():
                 t['state'] = 'disabled'
                 fund_words = True
                 break
+
             if enter == JeNeSuisPasUnRobot.rep_hum[1] or enter == JeNeSuisPasUnRobot.rep_hum[2]:
                 print(rep_bot + JeNeSuisPasUnRobot.rep_bot[0])
                 t.insert('end', rep_bot, 'ia')

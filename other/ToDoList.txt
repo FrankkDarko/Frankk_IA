@@ -25,6 +25,8 @@ Choses a faire mode GUI :
 
     + création d'utilisateur à la connexion
 
+    + adaptation de tout les options
+
 ------------------------------------------------------------------------------------------------------------------------
 Choses fait :
 
