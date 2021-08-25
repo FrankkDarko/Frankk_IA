@@ -15,8 +15,7 @@ mode GUI : ```$ python3 main_gui.py```
 
 ## 1. Présentation
 
-Frankk IA es un petit programme sous forme de terminal ou d'interface graphique, qui repond a certaine phrase et inclu
-quelque petite commandes amusante et pratique
+Frankk IA est un petit programme sous forme de terminal ou d'interface graphique, qui répond à certaines phrases et inclus quelque petite commandes amusante et pratique
 
 ## 2. Connaissances
 
