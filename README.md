@@ -1,4 +1,4 @@
-# Frankk IA
+# Frankk IA
 
 <center><img src="https://frankkdarko.fr/wp-content/uploads/2021/07/pp.jpg" width="300" height="300"></center>
 
@@ -46,12 +46,12 @@ commande : `mdpgen` `gen`  
 mode terminal :white_check_mark: || mode GUI :white_check_mark:
 
 > Génere des mots de passe, il y a différentes options possible :
->> [1] Faible : 6 caractères aléatoires  
->> [2] Moyen : 8 caractères aléatoires  
->> [3] Fort : 16 caractères aléatoires  
->> [4] Military : 32 caractères aléatoires  
->> [5] Perso : vous définissez chaque paramètre  
->> [6] Phrase : modifie une phrase de votre choix
+>> [1] Faible : 6 caractères aléatoires  
+>> [2] Moyen : 8 caractères aléatoires  
+>> [3] Fort : 16 caractères aléatoires  
+>> [4] Military : 32 caractères aléatoires  
+>> [5] Perso : vous définissez chaque paramètre  
+>> [6] Phrase : modifie une phrase de votre choix  
 
 commande : `8ball` `oracle`  
 mode terminal :white_check_mark: || mode GUI :x:
@@ -77,19 +77,19 @@ commande : `cryptor` `crypteur`  
 mode terminal :white_check_mark: || mode GUI :x:
 
 > Programme de cryptage et décryptage avec actuellement :
-> > * ROT13  
-> > * césar
-> > * vigenère
+> > * ROT13  
+> > * césar
+> > * vigenère
 
 commande : `randomme` `rdme`  
 mode terminal :white_check_mark: || mode GUI :x:
 
 > Programme d'options aléatoires : 
-> >[1]  chiffre aléatoire entre 0 et 1000  
-> >[2]  chiffre aléatoire entre deux valeurs définies par vous  
-> >[3]  mot aléatoire en français  
-> >[4]  mot aléatoire en anglais  
-> >[5]  blague aléatoire  
+> >[1]  chiffre aléatoire entre 0 et 1000  
+> >[2]  chiffre aléatoire entre deux valeurs définies par vous  
+> >[3]  mot aléatoire en français  
+> >[4]  mot aléatoire en anglais  
+> >[5]  blague aléatoire  
 
 commande : `exit` `sortie`  
 mode terminal :white_check_mark: || mode GUI :white_check_mark:
